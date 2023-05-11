@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'DevOpsShaniTehila'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_560DE37ABA5D4E6E9B7E6A9938D1D120 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_173C9A3EB7EA41F6816BD0A87DB7AA6C }}
           package: .
