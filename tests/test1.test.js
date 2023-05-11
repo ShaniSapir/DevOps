@@ -1,13 +1,13 @@
-const request = require('supertest') //This is the instance object of "supertest" package 
+const request = require('supertest') 
 const app = require('../server')
 
 describe("Test suite 1:", ()=>{
     test("test 1: ", async ()=>{
-        const res = await request(app).get('/') // The test: sending our server to the "request" instance and running get
-        expect(res.statusCode).toEqual(200) //We expect the result to be positive because we have this "get"
+        const res = await request(app).get('/')  
+        expect(res.statusCode).toEqual(200) 
     })
     test("test 2: ", async ()=>{
-        const res = await request(app).get('/1234') //Non-existing get
+        const res = await request(app).get('/1234')
         expect(res.statusCode).not.toEqual(200) 
     })
 })
